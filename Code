@@ -1,2 +1,24 @@
+import random
 def wrestling():
-  
+    print "You've picked the wrestling option, your coach will be helping"
+    print "There will also be a narrator expalining what is happening"
+    first = input("Coach Ham: This is the firt meet of the season are you ready: ")
+    if first == "yes":
+        print "Coach Ham: Alright, you better win"
+        print "Narrator: You walk out to the center of the matt and pick up the green anklet. Then you walk back to Ham."
+        print "Coach Ham: Listen, you need to shot and be aggressive in order to win. If you aren't you will lose."
+        print "Narrator: With the pep talk from your coach you go back to the center, shake the other wrestler's hand. The ref blows the whistle and it's on"
+        second = input("Narrator: You have the oppurtunity to shoot do you want to? ")
+        if second == "yes":
+            shot = random.randint(1,2)
+            if shot == 1:
+                print "Narrator: You shot a double, the guy tries to sprawl but you cut and take him down."
+                print "Narrator: The ref yells two green"
+                print "Coach Ham: Good shot, now get the two-on-one or crossface and ride"
+                ride: input("Narrator: Choose your ride: "
+                if ride == "two-on-one"
+                    chance = random.randint(1,2)
+                    if chance = 1:
+                        print "You got the two-on-one and broke him down, now you put in a cross wrist and pin him"
+                    if chance = 2:
+wrestling()
