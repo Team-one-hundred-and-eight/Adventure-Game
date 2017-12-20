@@ -1,0 +1,33 @@
+import random
+def soccer():
+    print("Welcome to Soccer on *MARS*!")
+
+    print ("You will be asked a set of questions And  ")
+    print ("You will be rated on your performance after each match out of a 10...The hype is REAL!!!")
+    print ("Press 'S' for ShowBoating, 'W' to Tackle , 'A' to shoot and 'D'  to Dive XD and 'P' to pass")
+    print ("GoodLuck I'll meet you at the other end. #HalaMadridYNadaMas")
+    
+    
+first = input("You walk into the field and Suddenly the spotlight is on You..Are you ready : ")
+
+if first == yes or y or Y :
+    
+    print("GoodJOb!")
+    print ("Commentarator : Hold on to your Hats it is the debut of the newly signed 17 year old..")
+    print ("Commentarator : It's nearly the end of the first half and nothing to show on the scoreboard!")
+    print ("Commentarator : And Real Madrid have a corner now, just before the end..Let's see what they can do..")
+    
+    second = input("The Gaffer and the fans are counting on you ..Choose wisely, You want to make the pass or attempt at goal : ")
+    list1 = ["S", "P"]
+    choice = random.list1
+    if choice == "S"
+    Print ("5")
+
+
+
+  
+    
+    
+    
+    
+soccer()
