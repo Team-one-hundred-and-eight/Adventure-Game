@@ -8,22 +8,26 @@ def soccer():
     print ("GoodLuck I'll meet you at the other end. #HalaMadridYNadaMas")
     
     
-first = input("You walk into the field and Suddenly the spotlight is on You..Are you ready : ")
+    first = input("You walk into the field and Suddenly the spotlight is on You..Are you ready : ")
 
-if first == yes or y or Y :
+    if first == "yes" or first ==  "y" or first ==  "Y" :
     
-    print("GoodJOb!")
-    print ("Commentarator : Hold on to your Hats it is the debut of the newly signed 17 year old..")
-    print ("Commentarator : It's nearly the end of the first half and nothing to show on the scoreboard!")
-    print ("Commentarator : And Real Madrid have a corner now, just before the end..Let's see what they can do..")
+        print("GoodJOb!")
+        print ("Commentarator : Hold on to your Hats it is the debut of the newly signed 17 year old..")
+        print ("Commentarator : It's nearly the end of the first half and nothing to show on the scoreboard!")
+        print ("Commentarator : And Real Madrid have a corner now, just before the end..Let's see what they can do..")
     
-    second = input("The Gaffer and the fans are counting on you ..Choose wisely, You want to make the pass or attempt at goal : ")
-    list1 = ["S", "P"]
-    choice = random.list1
-    if choice == "S"
-    Print ("5")
+        second = input("The Gaffer and the fans are counting on you ..Choose wisely, You want to make the pass or attempt at goal : ")
+        list1 = ["S", "P"]
+        choice = random.choice(list1) 
+        if choice == "S":
+            print ("5")
+            
+        elif choice == "P":
+            print("3")
+      
 
-
+    
 
   
     
