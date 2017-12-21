@@ -1,12 +1,13 @@
 import random
 def wrestling():
     print "You've picked the wrestling option, your coach will be helping you through this. His name is Coach Ham"
+    print "Quick rule, only responf with yes, no or a given response."
     print "There will also be a narrator expalining what is happening"
     first = input("Coach Ham: This is the firt meet of the season are you ready: ")
     if first == "yes":
         print "Coach Ham: Alright, you better win"
         print "Narrator: You walk out to the center of the matt and pick up the green anklet. Then you walk back to Ham."
-        print "Coach Ham: Listen, you need to shot and be aggressive in order to win. If you aren't you will lose."
+        print "Coach Ham: Listen, you need to shoot and be aggressive in order to win. If you aren't you will lose."
         print "Narrator: With the pep talk from your coach you go back to the center, shake the other wrestler's hand. The ref blows the whistle and it's on"
         shot = input("Narrator: In order to win you must be aggresive and shoot? Will you? ")
         if shot == "yes":
@@ -72,15 +73,150 @@ def wrestling():
                     print "Everything is done now and you leave the gym with a 1-0 record"
                     print "Congratulations you have won this room you now leave now."
         if shot == "no":
-            print "Narrator: You didn't shoot, because of that you got taken down."
-            print "You're on bottom now and you keep trying to stand up, but because 
-
-
-
-
-
-
-
-
-
+            sprawl_and_spin = random.randint(1, 10)
+            if sprawl_and_spin == 1:
+                print "Narrator: The other wrestler shoots but you sprawl and spin around. You get 2 for the take down."
+                half = input("There's an opputunity for a half, will you take it?")
+                if half == "yes":
+                    print "You run the half, punch it in and get the pin."
+                    print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                    print "Narrator: You get up, walk to the center, take off the anklet, the ref raises your hand in victory, then you walk off the mat"
+                    print "Coach Ham: Good match, you wrestled well and tough."
+                    print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
+                    print "Everything is done now and you leave the gym with a 1-0 record"
+                    print "Congratulations you have won this room you now leave now."
+                if half == "no":
+                    print "Narrator: You didn't take the oppurtunity and you get reversed."
+                    print "Narrator: You got lazy and got yout self pinned."
+                    print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                    print "Narrator: You get up, walk to the center, take off the anklet, the ref raises the wrestler's in victory, then you walk off the mat."
+                    print "Coach Ham: That was a bad match, you gave up at the end there, you need to be tougher on bottom, try to stand up."
+                    print "You lost, run code to try again."
+            else:
+                print "Narrator: You didn't shoot, because of that you got taken down."
+                standup = input("Do you want to stand up or get pinned? ")
+                if standup == "stand up":
+                    print "Narrator: You tried to stand up but you failed, you're now getting pinned." 
+                    print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                    print "Narrator: You get up, walk to the center, take off the anklet, the ref raises the wrestler's in victory, then you walk off the mat."
+                    print "Coach Ham: Nice match, you probaly would have won if you shot, and the standup looked pretty bad, we'll work on that in practice."
+                    print "You lost, run code to try again."
+                if standup == "get pinned":
+                    print "Narrator: You got lazy and got yout self pinned."
+                    print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                    print "Narrator: You get up, walk to the center, take off the anklet, the ref raises the wrestler's in victory, then you walk off the mat."
+                    print "Coach Ham: That was a bad match, you gave up at the end there, you need to be tougher on bottom, try to stand up."
+                    print "You lost, run code to try again."
+    if first == "no":
+        print "Coach Ham: Well too bad, you're going anyways."
+        print "Narrator: You walk out to the center of the matt and pick up the green anklet. Then you walk back to Ham."
+        print "Coach Ham: Listen, you need to shoot and be aggressive in order to win. If you aren't you will lose."
+        print "Narrator: With the pep talk from your coach you go back to the center, shake the other wrestler's hand. The ref blows the whistle and it's on"
+        shot = input("Narrator: In order to win you must be aggresive and shoot? Will you? ")
+        if shot == "yes":
+            chance1 = random.randint(1,2)
+            if chance1 == 1:
+                print "Narrator: Your shot was successful you took him down and you scored 2 points."
+                print "Coach Ham: You need to ride him now, get the two-on-one."
+                print "Narrator: You got the two-on-one and you broke him down. Now you're going for the cross face cradle."
+                choice = input("Would you like to cross face and go for the pin? ")
+                if choice == "yes":
+                    cross_face = random.randint(1,2)
+                    if cross_face == 1:
+                        while True:
+                            print "Narrator: He eats your cross face and you don't get it in."
+                            print "Coach Ham: Try again!"
+                            cross_face = random.randint(1,2)
+                            if cross_face == 2:
+                                print "Narrator: You ran in the the cradle and now your pinning him."
+                                print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                                print "Narrator: You get up, walk to the center, take off the anklet, the ref raises your hand in victory, then you walk off the mat"
+                                print "Coach Ham: Good match, you wrestled well and tough."
+                                print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
+                                print "Everything is done now and you leave the gym with a 1-0 record"
+                                print "Congratulations you have won this room you now leave now."
+                                break
+                    elif cross_face == 2:
+                        print "Narrator: You ran in the the cradle and now your pinning him."
+                        print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                        print "Narrator: You get up, walk to the center, take off the anklet, the ref raises your hand in victory, then you walk off the mat"
+                        print "Coach Ham: Good match, you wrestled well and tough."
+                        print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
+                        print "Everything is done now and you leave the gym with a 1-0 record"
+                        print "Congratulations you have won this room you now leave now."
+                if choice =="no":
+                    print "Narrator: You didn't take the oppurtunity and you get reversed."
+                    print "Narrator: You got lazy and got yout self pinned."
+                    print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                    print "Narrator: You get up, walk to the center, take off the anklet, the ref raises the wrestler's in victory, then you walk off the mat."
+                    print "Coach Ham: That was a bad match, you gave up at the end there, you need to be tougher on bottom, try to stand up."
+                    print "You lost, run code to try again."
+            elif chance1 == 2:
+                while True:
+                    print "Narrator: Your shot failed, but you recover."
+                    print "Coach Ham: Try again!"
+                    chance1 = random.randint(1,2)
+                    if chance1 == 2:
+                        print "Narrator: Your shot was successful you took him down and you scored 2 points."
+                        print "Coach Ham: You need to ride him now, get the two-on-one."
+                        print "Narrator: You got the two-on-one and you broke him down. Now you're going for the cross face cradle."
+                        break
+                    cross_face = random.randint(1,2)
+                if cross_face == 1:
+                    while True:
+                        print "Narrator: He eats your cross face and you don't get it in."
+                        print "Coach Ham: Try again!"
+                        cross_face = random.randint(1,2)
+                        if cross_face == 2:
+                            print "Narrator: You ran in the the cradle and now your pinning him."
+                            print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                            print "Narrator: You get up, walk to the center, take off the anklet, the ref raises your hand in victory, then you walk off the mat"
+                            print "Coach Ham: Good match, you wrestled well and tough."
+                            print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
+                            print "Everything is done now and you leave the gym with a 1-0 record"
+                            print "Congratulations you have won this room you now leave now."
+                            break
+                elif cross_face == 2:
+                    print "Narrator: You ran in the the cradle and now your pinning him."
+                    print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                    print "Narrator: You get up, walk to the center, take off the anklet, the ref raises your hand in victory, then you walk off the mat"
+                    print "Coach Ham: Good match, you wrestled well and tough."
+                    print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
+                    print "Everything is done now and you leave the gym with a 1-0 record"
+                    print "Congratulations you have won this room you now leave now."
+        if shot == "no":
+            sprawl_and_spin = random.randint(1, 10)
+            if sprawl_and_spin == 1:
+                print "Narrator: The other wrestler shoots but you sprawl and spin around. You get 2 for the take down."
+                half = input("There's an opputunity for a half, will you take it?")
+                if half == "yes":
+                    print "You run the half, punch it in and get the pin."
+                    print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                    print "Narrator: You get up, walk to the center, take off the anklet, the ref raises your hand in victory, then you walk off the mat"
+                    print "Coach Ham: Good match, you wrestled well and tough."
+                    print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
+                    print "Everything is done now and you leave the gym with a 1-0 record"
+                    print "Congratulations you have won this room you now leave now."
+                if half == "no":
+                    print "Narrator: You didn't take the oppurtunity and you get reversed."
+                    print "Narrator: You got lazy and got yout self pinned."
+                    print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                    print "Narrator: You get up, walk to the center, take off the anklet, the ref raises the wrestler's in victory, then you walk off the mat."
+                    print "Coach Ham: That was a bad match, you gave up at the end there, you need to be tougher on bottom, try to stand up."
+                    print "You lost, run code to try again."
+            else:
+                print "Narrator: You didn't shoot, because of that you got taken down."
+                standup = input("Do you want to stand up or get pinned? ")
+                if standup == "stand up":
+                    print "Narrator: You tried to stand up but you failed, you're now getting pinned." 
+                    print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                    print "Narrator: You get up, walk to the center, take off the anklet, the ref raises the wrestler's in victory, then you walk off the mat."
+                    print "Coach Ham: Nice match, you probaly would have won if you shot, and the standup looked pretty bad, we'll work on that in practice."
+                    print "You lost, run code to try again."
+                if standup == "get pinned":
+                    print "Narrator: You got lazy and got yout self pinned."
+                    print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                    print "Narrator: You get up, walk to the center, take off the anklet, the ref raises the wrestler's in victory, then you walk off the mat."
+                    print "Coach Ham: That was a bad match, you gave up at the end there, you need to be tougher on bottom, try to stand up."
+                    print "You lost, run code to try again."
 wrestling()
