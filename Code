@@ -59,27 +59,27 @@ def wrestling():
                         print "Narrator: You got the two-on-one and you broke him down. Now you're going for the cross face cradle."
                         break
                     choice = input("Would you like to cross face and go for the pin? ")
-                if choice == "yes":
-                    cross_face = random.randint(1,2)
-                    if cross_face == 1:
-                        while True:
-                            print "Narrator: He eats your cross face and you don't get it in."
-                            print "Coach Ham: Try again!"
-                            cross_face = random.randint(1,2)
-                            if cross_face == 2:
-                                print "Narrator: You ran in the the cradle and now your pinning him."
-                                print "The Ref: 1...2...3...4...5 *smacks the mat*"
-                                print "Narrator: You get up, walk to the center, take off the anklet, the ref raises your hand in victory, then you walk off the mat"
-                                print "Coach Ham: Good match, you wrestled well and tough."
-                                print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
-                                print "Everything is done now and you leave the gym with a 1-0 record"
-                                print "Congratulations you have won this room you now leave now."
-                                break
-                    elif cross_face == 2:
-                        print "Narrator: You ran in the the cradle and now your pinning him."
-                        print "The Ref: 1...2...3...4...5 *smacks the mat*"
-                        print "Narrator: You get up, walk to the center, take off the anklet, the ref raises your hand in victory, then you walk off the mat"
-                        print "Coach Ham: Good match, you wrestled well and tough."
+                    if choice == "yes":
+                        cross_face = random.randint(1,2)
+                        if cross_face == 1:
+                            while True:
+                                print "Narrator: He eats your cross face and you don't get it in."
+                                print "Coach Ham: Try again!"
+                                cross_face = random.randint(1,2)
+                                if cross_face == 2:
+                                    print "Narrator: You ran in the the cradle and now your pinning him."
+                                    print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                                    print "Narrator: You get up, walk to the center, take off the anklet, the ref raises your hand in victory, then you walk off the mat"
+                                    print "Coach Ham: Good match, you wrestled well and tough."
+                                    print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
+                                    print "Everything is done now and you leave the gym with a 1-0 record"
+                                    print "Congratulations you have won this room you now leave now."
+                                    break
+                        elif cross_face == 2:
+                            print "Narrator: You ran in the the cradle and now your pinning him."
+                            print "The Ref: 1...2...3...4...5 *smacks the mat*"
+                            print "Narrator: You get up, walk to the center, take off the anklet, the ref raises your hand in victory, then you walk off the mat"
+                            print "Coach Ham: Good match, you wrestled well and tough."
                         print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                         print "Everything is done now and you leave the gym with a 1-0 record"
                         print "Congratulations you have won this room you now leave now."
