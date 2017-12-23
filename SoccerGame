@@ -1,10 +1,11 @@
 import random
 def soccer():
+    
     print("Welcome to Soccer on *MARS*!")
 
     print ("You will be asked a set of questions And  ")
     print ("You will be rated on your performance after each match out of a 10...The hype is REAL!!!")
-    print ("Press 'S' for ShowBoating, 'W' to Tackle , 'A' to shoot and 'D'  to Dive XD and 'P' to pass")
+    print ("Press 'S' for ShowBoating, 'W' to Tackle , 'A' to shoot and 'D'  to Dive XD and 'P' to Pass")
     print ("GoodLuck I'll meet you at the other end. #HalaMadridYNadaMas")
     
     
@@ -12,20 +13,47 @@ def soccer():
 
     if first == "yes" or first ==  "y" or first ==  "Y" :
     
-        print("GoodJOb!")
+        print("GoodJOB!")
         print ("Commentarator : Hold on to your Hats it is the debut of the newly signed 17 year old..")
         print ("Commentarator : It's nearly the end of the first half and nothing to show on the scoreboard!")
-        print ("Commentarator : And Real Madrid have a corner now, just before the end..Let's see what they can do..")
+        print ("Commentarator : And Real Madrid have a corner now, just before the halfends..Let's see what they can do..")
     
         second = input("The Gaffer and the fans are counting on you ..Choose wisely, You want to make the pass or attempt at goal : ")
-        list1 = ["S", "P"]
-        choice = random.choice(list1) 
-        if choice == "S":
-            print ("5")
+        
+        choice = random.randint(1,2)
+        if second == "S":
+            print ("You go in and take the pass, the defender tackles you and your team now has a Penalty! Right before the whistle goes off..")
+            print("Your Teammate No. 7 Steps up to the spot....")
+            print("He gives you the ball and say's 'Go for the down right..'")
             
-        elif choice == "P":
-            print("3")
-      
+            print ("The team is counting on you.. Don't let them down")
+            penalty1 = input("Where do you choose to shoot? DownRight = 1 , TopLeft = 2    :   ")
+            
+            if choice == 1:
+                print("Gooooooooooooal")
+                print("Commentarator:  It's 1 - 0 ")
+                
+            elif choice == 2 :
+                print("Commentarator : The Keeper makes an outstanding save!!")
+                print ("Better luck next time !")
+            
+        elif second == "P":
+           
+            print("You take the corner and the ball goes over your teammates, you waste the corner kick and the whistle blows..")
+            print("It's HalfTime..Be sure to refresh yourslef.")
+            
+        print("You go back to the tunnel and the gaffer rearranges the team.")
+        print("The opposition pushes up and their striker takes a shot from long range...")  
+        print("The keeper makes a good save,catching the ball..He clears the ball")
+        min54 = input("Your teammate passes you the ball, there are two players of oppostion in front of you.. Do you choose to dribble or pass : ")
+        
+        if min45 == "dribble" or min45 == "d" or min45 == "D":
+            print ("You dribble the ball past one defender and then you try to Nutmeg the other defemder.. You fail miserably.. The defender clears the ball. ")
+            
+        elif min45 == "pass" or min45 == "p"  or min45 == "P" :
+            print ("You pass the ball and start the counter attack.. ")
+    else:
+        print("This not a valid option!! You're trapped now... Bahahahaha")
 
     
 
@@ -35,3 +63,4 @@ def soccer():
     
     
 soccer()
+
