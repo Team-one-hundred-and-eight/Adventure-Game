@@ -1,10 +1,4 @@
-import random
-def soccer():
-    print "s"
-def tennis():
-    print "t"
-def basketball():
-    print "b"
+
 
 def wrestling():
     print "You've picked the wrestling option, your coach will be helping you through this. His name is Coach Ham"
@@ -253,20 +247,5 @@ def wrestling():
                     print "Narrator: You get up, walk to the center, take off the anklet, the ref raises the wrestler's in victory, then you walk off the mat."
                     print "Coach Ham: That was a bad match, you gave up at the end there, you need to be tougher on bottom, try to stand up."
                     print "You lost, run code to try again."
-#wrestling()
-
-
-layout = raw_input("There's a panal in front of you, the options are T for tennis, S for soccer, B for basketball and W for Wrestling, enter a letter: ")
-if layout == "T":
-  tennis()
-elif layout == "B":
-  basketball()
-elif layout == "S":
-  soccer()
-elif layout == "W":
-  wrestling()
-else:
-  print("That is not an option")
-
 
 
