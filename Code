@@ -1,4 +1,11 @@
 import random
+def soccer():
+    print "s"
+def tennis():
+    print "t"
+def basketball():
+    print "b"
+
 def wrestling():
     print "You've picked the wrestling option, your coach will be helping you through this. His name is Coach Ham"
     print "Quick rule, only responf with yes, no or a given response."
@@ -31,7 +38,7 @@ def wrestling():
                                 print "Coach Ham: Good match, you wrestled well and tough."
                                 print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                                 print "Everything is done now and you leave the gym with a 1-0 record"
-                                print "Congratulations you have won this room you now leave now."
+                                print "Congratulations you have won this room you leave now."
                                 break
                     elif cross_face == 2:
                         print "Narrator: You ran in the the cradle and now your pinning him."
@@ -40,7 +47,8 @@ def wrestling():
                         print "Coach Ham: Good match, you wrestled well and tough."
                         print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                         print "Everything is done now and you leave the gym with a 1-0 record"
-                        print "Congratulations you have won this room you now leave now."
+                        print "Congratulations you have won this room you leave now."
+                        break
                 if choice =="no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
@@ -73,16 +81,17 @@ def wrestling():
                                     print "Coach Ham: Good match, you wrestled well and tough."
                                     print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                                     print "Everything is done now and you leave the gym with a 1-0 record"
-                                    print "Congratulations you have won this room you now leave now."
+                                    print "Congratulations you have won this room you leave now."
                                     break
                         elif cross_face == 2:
                             print "Narrator: You ran in the the cradle and now your pinning him."
                             print "The Ref: 1...2...3...4...5 *smacks the mat*"
                             print "Narrator: You get up, walk to the center, take off the anklet, the ref raises your hand in victory, then you walk off the mat"
                             print "Coach Ham: Good match, you wrestled well and tough."
-                        print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
-                        print "Everything is done now and you leave the gym with a 1-0 record"
-                        print "Congratulations you have won this room you now leave now."
+                            print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
+                            print "Everything is done now and you leave the gym with a 1-0 record"
+                            print "Congratulations you have won this room you leave now."
+                            break
                 if choice =="no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
@@ -102,7 +111,8 @@ def wrestling():
                     print "Coach Ham: Good match, you wrestled well and tough."
                     print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                     print "Everything is done now and you leave the gym with a 1-0 record"
-                    print "Congratulations you have won this room you now leave now."
+                    print "Congratulations you have won this room you leave now."
+                    break
                 if half == "no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
@@ -152,7 +162,7 @@ def wrestling():
                                 print "Coach Ham: Good match, you wrestled well and tough."
                                 print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                                 print "Everything is done now and you leave the gym with a 1-0 record"
-                                print "Congratulations you have won this room you now leave now."
+                                print "Congratulations you have won this room you leave now."
                                 break
                     elif cross_face == 2:
                         print "Narrator: You ran in the the cradle and now your pinning him."
@@ -161,7 +171,8 @@ def wrestling():
                         print "Coach Ham: Good match, you wrestled well and tough."
                         print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                         print "Everything is done now and you leave the gym with a 1-0 record"
-                        print "Congratulations you have won this room you now leave now."
+                        print "Congratulations you have won this room you leave now."
+                        break
                 if choice =="no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
@@ -194,7 +205,7 @@ def wrestling():
                                 print "Coach Ham: Good match, you wrestled well and tough."
                                 print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                                 print "Everything is done now and you leave the gym with a 1-0 record"
-                                print "Congratulations you have won this room you now leave now."
+                                print "Congratulations you have won this room you leave now."
                                 break
                     elif cross_face == 2:
                         print "Narrator: You ran in the the cradle and now your pinning him."
@@ -204,6 +215,7 @@ def wrestling():
                         print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                         print "Everything is done now and you leave the gym with a 1-0 record"
                         print "Congratulations you have won this room you now leave now."
+                        break
                 if choice =="no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
@@ -223,7 +235,8 @@ def wrestling():
                     print "Coach Ham: Good match, you wrestled well and tough."
                     print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                     print "Everything is done now and you leave the gym with a 1-0 record"
-                    print "Congratulations you have won this room you now leave now."
+                    print "Congratulations you have won this room you leave now."
+                    break
                 if half == "no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
@@ -246,4 +259,20 @@ def wrestling():
                     print "Narrator: You get up, walk to the center, take off the anklet, the ref raises the wrestler's in victory, then you walk off the mat."
                     print "Coach Ham: That was a bad match, you gave up at the end there, you need to be tougher on bottom, try to stand up."
                     print "You lost, run code to try again."
-wrestling()
+#wrestling()
+
+
+layout = raw_input("There's a panal in front of you, the options are T for tennis, S for soccer, B for basketball and W for Wrestling, enter a letter: ")
+if layout == "T":
+  tennis()
+elif layout == "B":
+  basketball()
+elif layout == "S":
+  soccer()
+elif layout == "W":
+  wrestling()
+else:
+  print("That is not an option")
+
+
+
