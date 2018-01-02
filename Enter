@@ -1,0 +1,12 @@
+import random
+layout = raw_input("There's a panal in front of you, the options are T for tennis, S for soccer, B for basketball and W for Wrestling, enter a letter: ")
+if layout == "T":
+  tennis()
+elif layout == "B":
+  basketball()
+elif layout == "S":
+  soccer()
+elif layout == "W":
+  wrestling()
+else:
+  print("That is not an option")
