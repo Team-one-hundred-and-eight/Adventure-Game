@@ -10,20 +10,20 @@ def wrestling():
     print "You've picked the wrestling option, your coach will be helping you through this. His name is Coach Ham"
     print "Quick rule, only responf with yes, no or a given response."
     print "There will also be a narrator expalining what is happening"
-    first = input("Coach Ham: This is the firt meet of the season are you ready: ")
+    first = raw_input("Coach Ham: This is the firt meet of the season are you ready: ")
     if first == "yes":
         print "Coach Ham: Alright, you better win"
         print "Narrator: You walk out to the center of the matt and pick up the green anklet. Then you walk back to Ham."
         print "Coach Ham: Listen, you need to shoot and be aggressive in order to win. If you aren't you will lose."
         print "Narrator: With the pep talk from your coach you go back to the center, shake the other wrestler's hand. The ref blows the whistle and it's on"
-        shot = input("Narrator: In order to win you must be aggresive and shoot? Will you? ")
+        shot = raw_input("Narrator: In order to win you must be aggresive and shoot? Will you? ")
         if shot == "yes":
             chance1 = random.randint(1,2)
             if chance1 == 1:
                 print "Narrator: Your shot was successful you took him down and you scored 2 points."
                 print "Coach Ham: You need to ride him now, get the two-on-one."
                 print "Narrator: You got the two-on-one and you broke him down. Now you're going for the cross face cradle."
-                choice = input("Would you like to cross face and go for the pin? ")
+                choice = raw_input("Would you like to cross face and go for the pin? ")
                 if choice == "yes":
                     cross_face = random.randint(1,2)
                     if cross_face == 1:
@@ -39,7 +39,6 @@ def wrestling():
                                 print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                                 print "Everything is done now and you leave the gym with a 1-0 record"
                                 print "Congratulations you have won this room you leave now."
-                                break
                     elif cross_face == 2:
                         print "Narrator: You ran in the the cradle and now your pinning him."
                         print "The Ref: 1...2...3...4...5 *smacks the mat*"
@@ -48,8 +47,7 @@ def wrestling():
                         print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                         print "Everything is done now and you leave the gym with a 1-0 record"
                         print "Congratulations you have won this room you leave now."
-                        break
-                if choice =="no":
+                if choice == "no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
                     print "The Ref: 1...2...3...4...5 *smacks the mat*"
@@ -65,8 +63,7 @@ def wrestling():
                         print "Narrator: Your shot was successful you took him down and you scored 2 points."
                         print "Coach Ham: You need to ride him now, get the two-on-one."
                         print "Narrator: You got the two-on-one and you broke him down. Now you're going for the cross face cradle."
-                        break
-                    choice = input("Would you like to cross face and go for the pin? ")
+                    choice = raw_input("Would you like to cross face and go for the pin? ")
                     if choice == "yes":
                         cross_face = random.randint(1,2)
                         if cross_face == 1:
@@ -82,7 +79,6 @@ def wrestling():
                                     print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                                     print "Everything is done now and you leave the gym with a 1-0 record"
                                     print "Congratulations you have won this room you leave now."
-                                    break
                         elif cross_face == 2:
                             print "Narrator: You ran in the the cradle and now your pinning him."
                             print "The Ref: 1...2...3...4...5 *smacks the mat*"
@@ -91,8 +87,7 @@ def wrestling():
                             print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                             print "Everything is done now and you leave the gym with a 1-0 record"
                             print "Congratulations you have won this room you leave now."
-                            break
-                if choice =="no":
+                if choice == "no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
                     print "The Ref: 1...2...3...4...5 *smacks the mat*"
@@ -103,7 +98,7 @@ def wrestling():
             sprawl_and_spin = random.randint(1, 10)
             if sprawl_and_spin == 1:
                 print "Narrator: The other wrestler shoots but you sprawl and spin around. You get 2 for the take down."
-                half = input("There's an opputunity for a half, will you take it?")
+                half = raw_input("There's an opputunity for a half, will you take it?")
                 if half == "yes":
                     print "You run the half, punch it in and get the pin."
                     print "The Ref: 1...2...3...4...5 *smacks the mat*"
@@ -112,7 +107,6 @@ def wrestling():
                     print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                     print "Everything is done now and you leave the gym with a 1-0 record"
                     print "Congratulations you have won this room you leave now."
-                    break
                 if half == "no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
@@ -122,7 +116,7 @@ def wrestling():
                     print "You lost, run code to try again."
             else:
                 print "Narrator: You didn't shoot, because of that you got taken down."
-                standup = input("Do you want to stand up or get pinned? ")
+                standup = raw_input("Do you want to stand up or get pinned? ")
                 if standup == "stand up":
                     print "Narrator: You tried to stand up but you failed, you're now getting pinned." 
                     print "The Ref: 1...2...3...4...5 *smacks the mat*"
@@ -140,7 +134,7 @@ def wrestling():
         print "Narrator: You walk out to the center of the matt and pick up the green anklet. Then you walk back to Ham."
         print "Coach Ham: Listen, you need to shoot and be aggressive in order to win. If you aren't you will lose."
         print "Narrator: With the pep talk from your coach you go back to the center, shake the other wrestler's hand. The ref blows the whistle and it's on"
-        shot = input("Narrator: In order to win you must be aggresive and shoot? Will you? ")
+        shot = raw_input("Narrator: In order to win you must be aggresive and shoot? Will you? ")
         if shot == "yes":
             chance1 = random.randint(1,2)
             if chance1 == 1:
@@ -190,7 +184,7 @@ def wrestling():
                         print "Coach Ham: You need to ride him now, get the two-on-one."
                         print "Narrator: You got the two-on-one and you broke him down. Now you're going for the cross face cradle."
                         break
-                    choice = input("Would you like to cross face and go for the pin? ")
+                    choice = raw_input("Would you like to cross face and go for the pin? ")
                 if choice == "yes":
                     cross_face = random.randint(1,2)
                     if cross_face == 1:
@@ -227,7 +221,7 @@ def wrestling():
             sprawl_and_spin = random.randint(1, 10)
             if sprawl_and_spin == 1:
                 print "Narrator: The other wrestler shoots but you sprawl and spin around. You get 2 for the take down."
-                half = input("There's an opputunity for a half, will you take it?")
+                half = raw_input("There's an opputunity for a half, will you take it?")
                 if half == "yes":
                     print "You run the half, punch it in and get the pin."
                     print "The Ref: 1...2...3...4...5 *smacks the mat*"
