@@ -152,6 +152,7 @@ def wrestling():
                                 print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                                 print "Everything is done now and you leave the gym with a 1-0 record"
                                 print "Congratulations you have won this room you leave now."
+                                break
                     elif cross_face == 2:
                         print "Narrator: You ran in the the cradle and now your pinning him."
                         print "The Ref: 1...2...3...4...5 *smacks the mat*"
@@ -192,6 +193,7 @@ def wrestling():
                                     print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                                     print "Everything is done now and you leave the gym with a 1-0 record"
                                     print "Congratulations you have won this room you leave now."
+                                    break
                         elif cross_face == 2:
                             print "Narrator: You ran in the the cradle and now your pinning him."
                             print "The Ref: 1...2...3...4...5 *smacks the mat*"
@@ -343,7 +345,6 @@ def wrestling():
                     print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
                     print "Everything is done now and you leave the gym with a 1-0 record"
                     print "Congratulations you have won this room you leave now."
-                    break
                 if half == "no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
