@@ -1,5 +1,8 @@
 import random
 
+def win():
+    print("A wall of spikes approch you from behind and you run out of the room as quickly as possible")
+
 # Puts you up againist an opponent and has you play Tennis
 def tennis_game():
     win = 0
@@ -104,6 +107,7 @@ def tennis_game():
                 print("You missed he has " + str(lose) + " points")
             if win == 3:
                 print("You won")
+                win()
                 break
             if lose == 3:
                 print("You lost")
@@ -131,6 +135,7 @@ def win_wrestling():
     print "Narrator: Now that you've won you put your warm ups on and watch the rest of the matches."
     print "Everything is done now and you leave the gym with a 1-0 record"
     print "Congratulations you have won this room you leave now."
+    win()
     
 # The standard message you get when you loose
 def loose_wrestling():
