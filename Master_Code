@@ -383,7 +383,6 @@ def basketball():
     print ("The other team is up by 2 and there is 20 seconds left in the game and it's your ball")  
     dribble
     
-basketball()
 
 # The start of the room with the options, also gets used when you lose a game
 def start():
@@ -392,6 +391,10 @@ def start():
       tennis()
     elif layout == "W":
       wrestling()
+    elif layout == "B":
+        basketball()
+    elif layout == "S":
+        soccer()
     else:
       print("That is not an option")
 start()
