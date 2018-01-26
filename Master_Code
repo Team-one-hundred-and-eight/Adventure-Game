@@ -507,7 +507,7 @@ def soccer():
 
 
 # The start of the room with the options, also gets used when you lose a game
-def start():
+def start_gym():
     layout = raw_input("There's a panal in front of you, the options are T for tennis, S for soccer, B for basketball and W for Wrestling, enter a letter: ")
     if layout == "T":
       tennis()
@@ -519,4 +519,5 @@ def start():
         soccer()
     else:
       print("That is not an option")
-start()
+start_gym()
+
