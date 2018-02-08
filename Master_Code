@@ -111,7 +111,7 @@ def tennis_game():
                 break
             if lose == 3:
                 print("You lost")
-                start()
+                
                 break
 # Starts the Tennis game
 def tennis():
@@ -143,7 +143,7 @@ def loose_wrestling():
     print "Narrator: You get up, walk to the center, take off the anklet, the ref raises the wrestler's in victory, then you walk off the mat."
     print "Coach Ham: That was a bad match, you gave up at the end there, you need to be tougher on bottom, try to stand up."
     print "You lost, run code to try again."
-    start()
+    
 
 # All of the code for the wrestling match 
 def wrestling():
@@ -255,7 +255,7 @@ def wrestling():
                     elif cross_face == 2:
                         print "Narrator: You ran in the the cradle and now your pinning him."
                         win_wrestling()
-                        break
+                      
                 if choice =="no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
@@ -285,7 +285,7 @@ def wrestling():
                     elif cross_face == 2:
                         print "Narrator: You ran in the the cradle and now your pinning him."
                         win_wrestling()
-                        break
+                        
                 if choice =="no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
@@ -298,7 +298,7 @@ def wrestling():
                 if half == "yes":
                     print "You run the half, punch it in and get the pin."
                     win_wrestling()
-                    break
+                   
                 if half == "no":
                     print "Narrator: You didn't take the oppurtunity and you get reversed."
                     print "Narrator: You got lazy and got yout self pinned."
@@ -314,6 +314,7 @@ def wrestling():
                     loose_wrestling()
     
 
+'''
 def defence():
     print ("You now have to go and play defence!")
     defence = raw_input("The other team is about to pass the ball up the court do you go for the steal?: ")
@@ -381,8 +382,8 @@ def basketball():
     print ("You have Chosen the basketball option.") 
     print ("You will be placed in a basketball game and have to try to win.")
     print ("The other team is up by 2 and there is 20 seconds left in the game and it's your ball")  
-    dribble
-    
+    dribble()
+    '''
 def soccer():
     m_score = 0
     o_score = 0
@@ -394,7 +395,7 @@ def soccer():
     print ("Press 'S' for ShowBoating, 'W' to Tackle , 'A' to shoot and 'D'  to Dive XD and 'P' to Pass")
     print ("GoodLuck I'll meet you at the other end. #HalaMadridYNadaMas")
 
-    first = input("You walk into the field and Suddenly the spotlight is on You..Are you ready : ")
+    first = raw_input("You walk into the field and Suddenly the spotlight is on You..Are you ready : ")
 
     if first == "yes" or first ==  "y" or first ==  "Y" :
     
@@ -403,7 +404,7 @@ def soccer():
         print ("commentator : It's nearly the end of the first half and nothing to show on the scoreboard!")
         print ("commentator : And Tempe FC have a corner now, just before the halfends..Let's see what they can do..")
     
-        second = input("The Gaffer and the fans are counting on you .. Choose wisely, You want to make the pass or attempt at goal : ")
+        second = raw_input("The Gaffer and the fans are counting on you .. Choose wisely, You want to make the pass or attempt at goal : ")
         
         choice = random.randint(1,2)
         if second == "S":
@@ -432,7 +433,7 @@ def soccer():
     print("The opposition pushes up and their striker takes a shot from long range...")  
     print("The keeper makes a good save,catching the ball..He clears the ball")
     
-    min49 = input ("Your teammate passes you the ball, there are two players of oppostion in front of you.. Do you choose to dribble or pass : ")
+    min49 = raw_input ("Your teammate passes you the ball, there are two players of oppostion in front of you.. Do you choose to dribble or pass : ")
         
     if min49 == "dribble" or min49 == "d" or min49 == "D":
         print ("You dribble the ball past one defender and then you try to Nutmeg the other defender.. You fail miserably.. The defender clears the ball. ")
@@ -442,7 +443,7 @@ def soccer():
         print ("And you run towards the left flank")
         print("You get the ball and choose to pass it  ")
             
-        choose_to_ = input("What do you choose to do ? Pass the ball to the near midfielder or Cross the ball to the center? : " )
+        choose_to_ = raw_input("What do you choose to do ? Pass the ball to the near midfielder or Cross the ball to the center? : " )
         if choose_to_ == ("Pass"):
             print("The defenders comes in the way and clears the ball")
                 
@@ -476,7 +477,7 @@ def soccer():
     o_score = o_score + 1
     print ("Game On")  + str(m_score)  + (" - ")+ str(o_score)
         
-    min84 = input("You have a freekick and it is 30 yards away from goal, Where do you choose to shoot ?  DownRight = 1 , TopLeft = 2 : ")
+    min84 = raw_input("You have a freekick and it is 30 yards away from goal, Where do you choose to shoot ?  DownRight = 1 , TopLeft = 2 : ")
 
     if min84 == "1":
         frkckH = random.randint(1,2)
@@ -491,7 +492,7 @@ def soccer():
                 
     elif min84 == "2":
         frkckH = random.randint(1,2)
-        if frkickH == 1:
+        if frkckH == 1:
             print("Goaaaaaaaaaaaaaalaaaaaaaaaaaazooooooooo del Tempeeee FCCCCCCCCC!!!")
             print("And it's ")  + str(m_score)  + (" - ")+ str(o_score)
              
@@ -508,16 +509,13 @@ def soccer():
 
 # The start of the room with the options, also gets used when you lose a game
 def start_gym():
-    layout = raw_input("There's a panal in front of you, the options are T for tennis, S for soccer, B for basketball and W for Wrestling, enter a letter: ")
+    layout = raw_input("There's a panal in front of you, the options are T for tennis, S for soccer and W for Wrestling, enter a letter: ")
     if layout == "T":
       tennis()
     elif layout == "W":
       wrestling()
-    elif layout == "B":
-        basketball()
     elif layout == "S":
         soccer()
     else:
       print("That is not an option")
 start_gym()
-
